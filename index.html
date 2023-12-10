@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Exam Portal</div>
+        <div class="user-info">
+            <div class="user-logo"></div>
+            <div class="user-name">User</div>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="main container-fluid">
+        <div class="left">
+            <h2 class="left-head">CREATE YOUR <br> PERSONALIZED <br> EXAM RIGHT NOW!</h2>
+
+            <button class="btn-create" onclick="handleClick()">Create Paper</button>
+
+            <h4 class="left-head1">CHOOSE YOUR DESIRED <br> LANGUAGE</h4>
+        </div>
+
+        <div class="right">
+            <div class="right-head1">
+                <h4 style="padding: 15px;margin-left: 160px;">CREATE YOUR QUESTIONS</h4>
+            </div>
+            <div class="cards-container" style="margin-right: 250px;">
+                <div class="cards">
+                    <span class="c-image" id="c-c-image"></span>
+                    <h4 class="head-c">C++</h4>
+                    <button class="btn-create1" onclick="oc()">Create</button>
+                </div>
+
+                <div class="cards">
+                    <span class="c-image" id="p-c-image"></span>
+                    <h4 class="head-c">Python</h4>
+                    <button class="btn-create1" onclick="opython()">Create</button>
+                </div>
+            </div>
+            <div class="cards-container1" style="margin-right: 250px;">
+                <div class="cards">
+                    <span class="c-image" id="j-c-image"></span>
+                    <h4 class="head-c">Java</h4>
+                    <button class="btn-create1" onclick="ojava()">Create</button>
+                </div>
+
+                <div class="cards">
+                    <span class="c-image" id="s-c-image"></span>
+                    <h4 class="head-c">SQL</h4>
+                    <button class="btn-create1" onclick="osql()">Create</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>

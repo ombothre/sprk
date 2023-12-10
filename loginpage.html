@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginpage.css">
+
+</head>
+<body>
+
+<div class="login-page">
+    <div class="form">
+        <div class="login">
+            <div class="login-header">
+                <h3>Sign In</h3>
+                <p>Please enter your credentials to login.</p>
+            </div>
+        </div>
+        <form class="login-form" id="loginForm">
+            <input type="text" id="username" placeholder="Username"/>
+            <input type="password" id="password" placeholder="Password"/>
+            <button type="button" onclick="checkLogin()">Sign In</button>
+            <p class="message" id="errorMessage"></p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function checkLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var errorMessage = document.getElementById("errorMessage");
+
+        if (username && password) {
+            // Successful login
+            errorMessage.innerHTML = "";
+            alert("Login successful!"); // You can replace this with your own success handling
+        } else {
+            // Unsuccessful login
+            errorMessage.innerHTML = "Please fill in both username and password.";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bar">
+            <div class="bar-button"> 
+                <button class="back" onclick="gotoo()"></button>
+            </div>
+            <div class="bar-text">
+                <span id="java"></span>
+                <span>Question Bank</span>
+            </div>
+        </div>
+        
+        <div class="area">
+            
+            <div class="question-win">
+                
+                                <div class="bar">
+                                <div class="bar-tex"> <span class="history">Question Type</span> </div>
+                                <input class="w3-input w3-border" id="opt1" name="opt1" type="text" placeholder="Marks" style="position: right;width:255px;">
+                               
+
+                    </div>
+                    <br><br>
+                <div class="question-box1">
+                    <div class="fquestion-box-item 0">
+                        <div class="question-box-info 0">
+                            <label class="checkbox-container 0">
+                                <input class="w3-input w3-border" id="que" name="que" type="textfield" placeholder="Question...." style="width:100%;" required>
+                            </label>
+                            
+                        </div>
+                        
+                    </div>
+                    <br><br>
+                    <div class="question-box-item 1">
+                        <div class="question-box-info 1">
+                            <label class="checkbox-container 1">
+                                <input class="w3-input w3-border" id="opt1" type="text" placeholder="Option 1" style="width:100%;" required>
+                            </label>
+                            
+                        </div>
+                        <div class="tool-buttons 1">
+                            <input type="radio" class="cbox" name="rbtn" id="rbtn1">
+                            
+                        </div>
+                    </div>
+                    <div class="question-box-item 2">
+                        <div class="question-box-info 2">
+                            <label class="checkbox-container 2">
+                                <input class="w3-input w3-border" id="opt2" type="text" placeholder="Option 2" required>
+                            </label>
+                            
+                        </div>
+                        <div class="tool-buttons 2">
+                            <input type="radio" class="cbox" name="rbtn" id="rbtn2">
+                        </div>
+                    </div>
+                    <div class="question-box-item 3">
+                        <div class="question-box-info 3">
+                            <label class="checkbox-container 3">
+                                <input class="w3-input w3-border" id="opt3" type="text" placeholder="Option 3" required>
+                            </label>
+                            
+                        </div>
+                        <div class="tool-buttons 3">
+                            <input type="radio" class="cbox" name="rbtn" id="rbtn3">
+                        </div>
+                    </div>
+                    <div class="question-box-item 4">
+                        <div class="question-box-info 4">
+                            <label class="checkbox-container 4">
+                                <input class="w3-input w3-border" id="opt4" type="text" placeholder="Option 4" required>
+                            </label>
+                            
+                        </div>
+                        <div class="tool-buttons 4">
+                            <input type="radio" class="cbox" name="rbtn" id="rbtn4">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rear">
+                <!-- <button id="generate" disabled onclick="pop()">Clear</button> -->
+                <button class="buttons"  onclick="clearFields()">Clear</button>
+                <button class="buttons">Add</button>
+            </div>
+
+            <!-- Popup box container -->
+            
+
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>

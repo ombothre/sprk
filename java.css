@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*
+.main{
+position: fixed;
+width: 100%;
+height: 100%;
+}
+*/
+.back {
+    background: url('https://api.iconify.design/icon-park-solid/back.svg?color=white') no-repeat center center / contain;
+    content: url('https://api.iconify.design/icon-park-solid/back.svg?color=white');
+    height: 27px;
+    width: 40px;
+    border: none;
+}
+
+.bar {
+    background-color: #00E167;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-button {
+    display: flex;
+    justify-content: flex-start;
+    flex: auto; /* Fixing the size of the back button */
+}
+
+.bar-logo {
+    flex: auto; /* Taking remaining space in the center */
+    display: flex;
+    justify-content: center; /* Centering the content */
+}
+
+.bar-text {
+    flex: auto; /* Fixing the size of the text */
+    display: flex;
+    justify-content: left; /* Centering the content */
+    align-items: center;
+}
+
+
+#java{
+  background: url('https://api.iconify.design/devicon/java.svg') no-repeat center center / contain;
+  content: url('https://api.iconify.design/devicon/java.svg');
+  width: 30px;
+  height: 30px;
+}
+#python{
+    background: url('https://api.iconify.design/simple-icons/python.svg?color=white') no-repeat center center / contain;
+    content: url('https://api.iconify.design/simple-icons/python.svg?color=white');
+  width: 30px;
+  height: 30px;
+}
+#sql{
+    background: url('https://api.iconify.design/iconoir/database.svg?color=white') no-repeat center center / contain;
+    content: url('https://api.iconify.design/iconoir/database.svg?color=white');
+  width: 30px;
+  height: 30px;
+}
+#cpp{
+    background: url('https://api.iconify.design/devicon/cplusplus.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/devicon/cplusplus.svg');
+  width: 30px;
+  height: 30px;
+}
+
+.bar-tex {
+    flex: auto;
+    margin: auto;
+}
+
+.question-bank-div {
+    text-align: center;
+}
+
+.question-win {
+    
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.techbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech-box {
+    margin: 0px;
+    padding: 0px;
+}
+
+.w3-input.w3-border{
+    flex: auto;
+    margin: auto;
+    width: 100%;
+}
+.box {
+    border: none;
+    background-color: #00E167;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    width: 70px;
+}
+
+.tool-buttons{
+    margin: 10px;
+    
+}
+
+.question-box-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+.question-box {
+    overflow-y: auto;
+    height: 223px;
+}
+.question-box-item:hover {
+    border : 3px solid #0094FF;
+}
+
+.question-box-item {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.question-box-info {
+    flex: 1; /* Makes the info div take available horizontal space */
+    display: flex;
+    flex-direction: column; /* Aligns inputs vertically */
+}
+
+.question-box-info input {
+    flex: 1; /* Makes the input fields take available vertical space */
+    margin-bottom: 5px; /* Adds spacing between input fields */
+    padding: 5px; /* Adjusting input padding */
+    width: calc(50% - 10px); /* Sets the width of each input to 50% minus margin */
+    margin-right: 10px; /* Adds spacing between inputs */
+}
+
+.tool-buttons {
+    display: flex;
+    flex-direction: column; /* Aligns radio buttons vertically */
+}
+
+.q {
+    border: none;
+    width: 20px;
+    height: 15px;
+
+    align-items: end;
+}
+
+.rear {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 110px 0px 0px;
+}
+
+#generate {
+    border: none;
+    color: white;
+    background-color: #00E167;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#generate:disabled {
+    border: none;
+    color: white;
+    background-color: gray;
+    cursor: not-allowed;
+    padding: 10px;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Styles for the popup container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+
+.popup-sub-content {
+    display: flex;
+    text-align: center;
+}
+
+/* Close button style */
+.close {
+    background: url('https://api.iconify.design/zondicons/close-outline.svg?color=crimson') no-repeat center center / contain;
+    content: url('https://api.iconify.design/zondicons/close-outline.svg?color=crimson');
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.pop-wind {
+    text-align: center;
+}
+
+.pop-bar {
+    background-color: #00E167;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtbox-container{
+    border : 0px;
+}
+
+.buttons{
+    border: none;
+    background-color: #00E167;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 60px;
+}
+
+.rear input[type="button"] {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin: 5px; /* Adjust the margin as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+    cursor: pointer;
+    border: 1px solid #ccc; /* Add a border with a color of your choice */
+    border-radius: 10px; /* Add rounded corners if desired */
+    background-color: #f0f0f0; /* Add a background color of your choice */
+    color: #333; /* Set the text color */
+  }
+  
+  input[type="button"]:hover {
+    background-color: #ddd; /* Change the background color on hover */
+  }
+   
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+    .question-win {
+        margin: 40px;
+    }
+
+    .question-box {
+        height: 180px;
+    }
+
+    /* Additional styles for tablets */
+}
+
+/* Media query for smaller tablets and large smartphones */
+@media screen and (max-width: 768px) {
+    .question-win {
+        margin: 30px;
+    }
+
+    .question-box {
+        height: 140px;
+    }
+
+    /* Additional styles for smaller tablets and large smartphones */
+}
+
+/* Media query for smartphones */
+@media screen and (max-width: 480px) {
+    .question-win {
+        margin: 20px;
+    }
+
+    .question-box {
+        height: 100px;
+        
+    }
+
+    /* Additional styles for smartphones */
+}

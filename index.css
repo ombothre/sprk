@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+.navbar {
+    background-color: #00E167;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-logo {
+    background: url('https://api.iconify.design/gg/profile.svg?color=white') no-repeat center center / contain;
+    content: url('https://api.iconify.design/gg/profile.svg?color=white');
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    align-items: center;
+    padding-right: 5px ;
+    margin-top: 5px;
+  }
+  .user-name {
+    margin-right: 40px;
+    font-weight: bold;
+  }
+
+  .logout-btn {
+    background-color: white; 
+    padding: 8px 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+  }
+  .left{
+    background-color: whitesmoke;
+    height: 600px;
+    width:  500px;
+  }
+  .left-head{
+    margin-top: 80px;
+    text-align:start;
+    margin-left: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  .btn-create{
+    margin-top: 100px;
+    background-color: #00E167;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 60px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+  }
+  .left-head1{
+    margin-top: 80px;
+    text-align:start;
+    margin-left: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+
+  .right-head1{
+    margin-right: 300px;
+    margin-top: 40px;
+    font-family: 'Oswald', sans-serif;
+   
+   
+  }
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards-container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 200px;
+  margin: 20px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #00E167;
+  text-align: center;
+  color: white;
+}
+
+.head-c {
+  margin-top: 0;
+}
+
+.btn-create1 {
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c-image {
+  width: 35%;
+  height: 35%;
+  margin: 10px;
+}
+
+button:active{
+  transform: translateY(1px);
+}
+
+#p-c-image{
+  background: url('https://api.iconify.design/simple-icons/python.svg?color=white') no-repeat center center / contain;
+  content: url('https://api.iconify.design/simple-icons/python.svg?color=white');
+  width: 35%;
+  height: 35%;
+  margin: 10px;
+}
+#s-c-image{
+  background: url('https://api.iconify.design/iconoir/database.svg?color=white') no-repeat center center / contain;
+  content: url('https://api.iconify.design/iconoir/database.svg?color=white');
+  width: 35%;
+  height: 35%;
+  margin: 10px;
+}
+#j-c-image{
+  background: url('https://api.iconify.design/devicon/java.svg') no-repeat center center / contain;
+  content: url('https://api.iconify.design/devicon/java.svg');
+  width: 35%;
+  height: 35%;
+  margin: 10px;
+}
+#c-c-image{
+  background: url('https://api.iconify.design/devicon/cplusplus.svg') no-repeat center center / contain;
+  content: url('https://api.iconify.design/devicon/cplusplus.svg');
+  width: 35%;
+  height: 35%;
+  margin: 10px;
+}

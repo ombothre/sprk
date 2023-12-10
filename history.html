@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Generator</title>
+
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bar">
+            <div class="bar-button"> <button class="back" onclick="gotoo()"></button> </div>
+            <div class="bar-text"> <span class="history">History</span> </div>
+        </div>
+        <div class="area">
+            <div class="question-win">
+                <div class="techbox">
+                    <div class="tech-box">
+                        <button class="box python" id="bpython" onclick="bpython()">
+                            <span class="opt" id="opt-1"></span>
+                            <span class="gap">Python</span>
+                        </button>
+                        <button class="box sql" id="bsql" onclick="bsql()">
+                            <span class="opt" id="opt-2"></span>
+                            <span class="gap">Sql</span>
+                        </button>
+                        <button class="box java" id="bjava" onclick="bjava()">
+                            <span class="opt" id="opt-3"></span>
+                            <span class="gap">Java</span>
+                        </button>
+                        <button class="box c" id="bc" onclick="bc()">
+                            <span class="opt" id="opt-4"></span>
+                            <span class="gap">C++</span>
+                        </button>
+                    </div>
+                    <div class="question-selected">
+                        <span>Number of questions selected : </span>
+                        <span id="qselect">0</span>
+                        <span>/10</span>
+                    </div>
+                </div>
+                <div class="question-box" id="question-box-1">
+                    <div class="question-box-item 1">
+                        <div class="question-box-info 1">
+                            <label class="checkbox-container 1">
+                                <input type="checkbox" class="cbox" id="cbox1">
+                            </label>
+                            <span>Question 1</span>
+                        </div>
+                        <div class="tool-buttons 1">
+                            <button class="q open 1"></button>
+                            <button class="q edit 1"></button>
+                            <button class="q del 1" id="d1" onclick="handleDel('question-box-1')"></button>
+                        </div>
+                    </div>
+                    <div class="question-box-item 2" id="question-box-2">
+                        <div class="question-box-info 2">
+                            <label class="checkbox-container 2">
+                                <input type="checkbox" class="cbox" id="cbox2">
+                            </label>
+                            <span>Question 2</span>
+                        </div>
+                        <div class="tool-buttons 2">
+                            <button class="q open 2"></button>
+                            <button class="q edit 2"></button>
+                            <button class="q del 2" id="d2" onclick="handleDel('question-box-2')"></button>
+                        </div>
+                    </div>
+                    <div class="question-box-item 3" id="question-box-3">
+                        <div class="question-box-info 3">
+                            <label class="checkbox-container 3">
+                                <input type="checkbox" class="cbox" id="cbox3">
+                            </label>
+                            <span>Question 3</span>
+                        </div>
+                        <div class="tool-buttons 3">
+                            <button class="q open 3"></button>
+                            <button class="q edit 3"></button>
+                            <button class="q del 3" id="d3" onclick="handleDel('question-box-3')"></button>
+                        </div>
+                    </div>
+                    <div class="question-box-item 4" id="question-box-4">
+                        <div class="question-box-info 4">
+                            <label class="checkbox-container 4">
+                                <input type="checkbox" class="cbox" id="cbox4">
+                            </label>
+                            <span>Question 4</span>
+                        </div>
+                        <div class="tool-buttons 4">
+                            <button class="q open 4"></button>
+                            <button class="q edit 4"></button>
+                            <button class="q del 4" id="d4" onclick="handleDel('question-box-4')"></button>
+                        </div>
+                    </div>
+                    <div class="question-box-item 5" id="question-box-5">
+                        <div class="question-box-info 5">
+                            <label class="checkbox-container 5">
+                                <input type="checkbox" class="cbox" id="cbox5">
+                            </label>
+                            <span>Question 5</span>
+                        </div>
+                        <div class="tool-buttons 5">
+                            <button class="q open 5"></button>
+                            <button class="q edit 5"></button>
+                            <button class="q del 5" id="d5" onclick="handleDel('question-box-5')"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rear">
+                <button id="generate" disabled onclick="pop()">Generate</button>
+            </div>
+
+            <!-- Popup box container -->
+            <div class="popup-container" id="popupContainer">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()"></span>
+                    <div class="pop-win">
+                        <div class="pop-bar">
+                            <span>Paper</span>
+                        </div>
+                        <div class="pop-content">
+                            <div class="pop-sub-content">
+                                <span class="pop-text">Link to your paper : </span>
+                                <span class="pop-text" id="link"></span>
+                            </div>
+                            <div class="pop-sub-content">
+                                <input class="pop-text2" type="text" id="s-email" placeholder="Student E-mail">
+                            </div>
+                            <div class="pop-sub-content">
+                                <button id="email-button" onclick="handleMail()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Open popup-->
+            <div class="popup-container" id="popupContainer2">
+                <div class="popup-content">
+                    <span class="close" onclick="closeePopup()"></span>
+                    <div class="pop-win">
+                        <div class="pop-bar">
+                            <span>Question</span>
+                        </div>
+                        <div class="pop-content">
+                            <div class="pop-sub-content">
+                                <span class="pop-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, exercitationem! Mollitia accusantium voluptatem facilis cupiditate saepe pariatur? Debitis, vitae saepe?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="history.js"></script>
+
+</body>
+
+</html>
