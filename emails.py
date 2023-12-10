@@ -3,8 +3,8 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-sender_email = 'ombothre1024@gmail.com'
-password = 'whvzuayykeypbvqb'
+sender_email = ''
+password = ''
 
 smtp_server = os.environ.get('SMTP_SERVER')
 smtp_port  = int(os.environ.get('SMTP_PORT'))

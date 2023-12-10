@@ -4,14 +4,14 @@ const handleClick = () => {
 }
 
 const oc = () => {
-    window.location.href = "c++.html";
+    window.location.href = "cards/c++.html";
 }
 const opython = () => {
-    window.location.href = "python.html";
+    window.location.href = "<cards/python.html";
 }
 const ojava = () => {
-    window.location.href = "java.html";
+    window.location.href = "cards/java.html";
 }
 const osql = () => {
-    window.location.href = "sql.html";
+    window.location.href = "cards/sql.html";
 }
